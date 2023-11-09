@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                dir("/var/lib/jenkins/workspace/Experiment 5/my-app/") {
+                dir("/home/ubuntudr/.jenkins/workspace/Experiment 5/my-app") {
                 sh 'mvn -B -DskipTests clean package'
                 }
             
